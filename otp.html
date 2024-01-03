@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="gulamOTP()" id="get">Get OTP</button>
+    <hr>
+    <h1 id="demo"></h1>
+
+    <script>
+        function gulamOTP(){
+            let output = Math.random();
+            let s = (output*(600000-1))+1;
+
+            document.querySelector("#demo").innerHTML = `your OTP is ${Math.floor(s)}`;
+        }
+
+    </script>
+</body>
+<style>
+    body{
+        background-color: coral;
+    }
+
+</style>
+</html>
